@@ -24,6 +24,7 @@ const data = {
       cover: "/images/evangeline-shaw-nwLTVwb7DbU-unsplash1.png",
     },
   ],
+  events: []
 };
 
 describe("When slider is created", () => {

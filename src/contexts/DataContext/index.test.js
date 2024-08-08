@@ -3,7 +3,7 @@ import { DataProvider, api, useData } from "./index";
 
 describe("When a data context is created", () => {
   it("a call is executed on the events.json file", async () => {
-    api.loadData = jest.fn().mockReturnValue({ result: "ok" });
+    api.loadData = jest.fn().mockReturnValue({ result: "ok", events: [] });
     const Component = () => {
       const { data } = useData();
       return <div>{data?.result}</div>;
